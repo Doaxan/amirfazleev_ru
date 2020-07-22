@@ -1,8 +1,11 @@
 import React from 'react'
 import './App.css'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 import {Container, Navbar, Nav} from 'react-bootstrap'
 import Footer from './components/Footer'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +22,7 @@ class App extends React.Component {
         subTitle: 'Subtitle',
         text: 'Checkout my projects below',
       },
-      About: {
+      about: {
         title: 'About Me',
       },
       contact: {
@@ -45,6 +48,23 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+
+          <Route path="/" exact render={() => <HomePage
+            title={this.state.home.title}
+            subTitle={this.state.home.subTitle}
+            text={this.state.home.text}
+          />
+          }/>
+
+          <Route path="/about" exact render={() => <AboutPage
+            title={this.state.about.title}
+          />
+          }/>
+
+          <Route path="/contact" exact render={() => <ContactPage
+            title={this.state.contact.title}
+          />
+          }/>
 
           <Footer/>
 
