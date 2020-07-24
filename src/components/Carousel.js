@@ -1,6 +1,7 @@
 import React from 'react'
 
 import pinpointer from '../assets/pinpointer.png'
+import im from '../assets/im.jpg'
 import Card from './Card'
 import {Container, Row} from 'react-bootstrap'
 
@@ -12,7 +13,16 @@ class Carousel extends React.Component {
         {
           id: 0,
           title: 'Pinpointer',
-          subTitle: 'subTitle',
+          subTitle: 'Шведская система логистики промышленных отходов',
+          stack: [
+            'apollo-server-express, graphql',
+            'MongoDB: mongoose, создание миграций',
+            'SMTP: nodemailer',
+            'CASL role-based авторизация',
+            'Unit и Integration тесты Jest',
+            'CI/CD: правка .gitlab-ci.yml',
+            'Gitflow, code-review'
+          ],
           imgSrc: pinpointer,
           link: 'https://pinpointer.se',
           selected: false,
@@ -20,19 +30,10 @@ class Carousel extends React.Component {
 
         {
           id: 1,
-          title: 'Project 2',
-          subTitle: 'subTitle',
-          imgSrc: '',
-          link: 'https://pinpointer.se',
-          selected: false,
-        },
-
-        {
-          id: 2,
-          title: 'Project 3',
-          subTitle: 'subTitle',
-          imgSrc: '',
-          link: 'https://pinpointer.se',
+          title: 'Github',
+          subTitle: 'Мой github аккаунт',
+          imgSrc: im,
+          link: 'https://github.com/Doaxan',
           selected: false,
         },
       ],

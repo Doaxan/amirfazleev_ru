@@ -18,9 +18,19 @@ code {
 
 .g-card-image {
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
     height: 480px;
     box-shadow: 0 0 3px 1px #ccc;
+    object-fit: cover;
+}
+.g-card-im{
+    border-radius: 10px;
+    width: 400px;
+    height: 480px;
+    box-shadow: 0 0 3px 1px #ccc;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
 }
 
 .g-card-info {

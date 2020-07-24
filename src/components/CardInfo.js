@@ -8,7 +8,11 @@ function CardInfo(props) {
     <animated.div className="g-card-info" style={style}>
       <p className="g-card-title">{props.title}</p>
       <p className="g-card-sub-title">{props.subTitle}</p>
-      <a href={props.link} target="_blank" rel="noopener noreferrer">View</a>
+      {props.stack && <p className="g-card-sub-title">Мой стек:</p>}
+      <ul>
+        {props.stack?.map((item, index) => <li key={index}>{item}</li>) }
+      </ul>
+      <a href={props.link} target="_blank" rel="noopener noreferrer">{props.link}</a>
     </animated.div>
   )
 }
