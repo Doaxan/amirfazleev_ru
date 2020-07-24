@@ -21,6 +21,7 @@ class Carousel extends React.Component {
             'CASL role-based авторизация',
             'Unit и Integration тесты Jest',
             'CI/CD: правка .gitlab-ci.yml',
+            'docker-compose, orchestration',
             'Gitflow, code-review'
           ],
           imgSrc: pinpointer,
