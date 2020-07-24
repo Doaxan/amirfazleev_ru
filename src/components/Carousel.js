@@ -40,7 +40,7 @@ class Carousel extends React.Component {
     }
   }
 
-  handleCardClick = (id, card) => {
+  handleCardClick = id => {
     const items = [...this.state.items]
     items[id].selected = !items[id].selected
     items.forEach(item => item.selected = item.id === id)
