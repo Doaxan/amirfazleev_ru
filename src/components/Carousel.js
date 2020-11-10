@@ -2,6 +2,7 @@ import React from 'react'
 
 import pinpointer from '../assets/pinpointer.png'
 import im from '../assets/im.jpg'
+import privet from '../assets/privet.jpg'
 import Card from './Card'
 import {Container, Row} from 'react-bootstrap'
 
@@ -35,6 +36,22 @@ class Carousel extends React.Component {
           subTitle: 'Мой github аккаунт',
           imgSrc: im,
           link: 'https://github.com/Doaxan',
+          selected: false,
+        },
+
+        {
+          id: 2,
+          title: 'Privet.name',
+          subTitle: 'Анонимный видеочат',
+          stack: [
+              'FastAPI (Python)',
+              'Vuetify (VueJS)',
+              'WebRTC',
+              'Websockets',
+              'Caddy server (web server/proxy)'
+          ],
+          imgSrc: privet,
+          link: 'https://Privet.name',
           selected: false,
         },
       ],

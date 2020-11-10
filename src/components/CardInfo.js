@@ -8,7 +8,7 @@ function CardInfo(props) {
     <animated.div className="g-card-info" style={style}>
       <p className="g-card-title">{props.title}</p>
       <p className="g-card-sub-title">{props.subTitle}</p>
-      {props.stack && <p className="g-card-sub-title">Мой стек:</p>}
+      {props.stack && <p className="g-card-sub-title">Стек разработки:</p>}
       <ul>
         {props.stack?.map((item, index) => <li key={index}>{item}</li>) }
       </ul>
